@@ -51,7 +51,7 @@ All notable changes to the Umhlanga Fitness Studio website (WEDE5020 PoE).
 - Visible focus styles, `aria-live` status messages, `aria-invalid` and `aria-describedby` on form fields; reduced-motion users see no animation.
 
 ### 2026-11-08: Deployment
-- Deployed to GitHub Pages (add your live URL here once it is published).
+- Deployed to GitHub Pages: https://shrikar645.github.io/WEDE-Summative-POE-Website-publish/
 
 ---
 
