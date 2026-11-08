@@ -12,29 +12,6 @@ images/
 ```
 `blog.html` is an additional page (beyond the five required pages).
 
-### Sitemap
-Visual structure of the website (the home page links to every other page through the main menu):
-
-```mermaid
-flowchart TD
-    Home["Home<br/>index.html"] --> About["About Us<br/>about.html"]
-    Home --> Services["Services<br/>services.html"]
-    Home --> Enquiry["Enquiry<br/>enquiry.html"]
-    Home --> Blog["Blog<br/>blog.html"]
-    Home --> Contact["Contact Us<br/>contact.html"]
-    About --> History["History, mission and vision"]
-    About --> Team["Team"]
-    About --> Gallery["Studio gallery and lightbox"]
-    Services --> Cards["Core services"]
-    Services --> Packages["Packages and rates"]
-    Services --> Finder["Programme finder"]
-    Services --> FAQ["FAQ accordion"]
-    Enquiry --> EForm["Enquiry form and price estimate"]
-    Blog --> Posts["Three journal entries"]
-    Contact --> CForm["Contact form and email"]
-    Contact --> Map["Interactive map]
-```
-
 ```
 Umhlanga Fitness Studio
 ├── index.html      Home (hero, why choose us, core offerings)
