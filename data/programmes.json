@@ -1,0 +1,92 @@
+{
+  "currency": "ZAR",
+  "commitmentDiscounts": { "1": 0, "3": 0.05, "6": 0.1, "12": 0.15 },
+  "categories": [
+    { "id": "personal", "label": "Personal training" },
+    { "id": "group", "label": "Group classes" },
+    { "id": "wellness", "label": "Wellness coaching" },
+    { "id": "recovery", "label": "Recovery" },
+    { "id": "membership", "label": "Memberships" }
+  ],
+  "services": {
+    "private-coaching": {
+      "name": "1-on-1 Private Personal Training", "price": 450, "unit": "session",
+      "availability": {
+        "morning": { "status": "limited", "text": "Limited: 3 morning sessions left this week." },
+        "afternoon": { "status": "good", "text": "Good availability: 6 afternoon sessions open this week." },
+        "evening": { "status": "limited", "text": "Limited: 2 evening sessions left this week." }
+      }
+    },
+    "group-classes": {
+      "name": "Boutique Group Fitness Classes", "price": 150, "unit": "class",
+      "note": "Based on an average class price across HIIT, Pilates and Yoga.",
+      "availability": {
+        "morning": { "status": "good", "text": "Good availability: classes at 06:00 and 09:00 daily." },
+        "afternoon": { "status": "good", "text": "Good availability: classes at 12:30 and 15:30 on weekdays." },
+        "evening": { "status": "limited", "text": "Popular: book your evening class at least 2 days ahead." }
+      }
+    },
+    "nutrition-coaching": {
+      "name": "Nutrition & Metabolic Coaching", "price": 650, "unit": "consultation",
+      "availability": {
+        "morning": { "status": "good", "text": "Good availability: consultations open from this week." },
+        "afternoon": { "status": "good", "text": "Good availability: consultations open from this week." },
+        "evening": { "status": "waitlist", "text": "Waitlist: evening consultations are fully booked for now." }
+      }
+    },
+    "recovery-suite": {
+      "name": "Holistic Recovery & Wellness Suite", "price": 350, "unit": "session",
+      "availability": {
+        "morning": { "status": "good", "text": "Good availability: recovery suite slots open every morning." },
+        "afternoon": { "status": "limited", "text": "Limited: 4 afternoon slots left this week." },
+        "evening": { "status": "limited", "text": "Limited: 2 evening slots left this week." }
+      }
+    },
+    "basic-pass": {
+      "name": "Basic Studio Pass", "price": 599, "unit": "month",
+      "availability": {
+        "morning": { "status": "good", "text": "Good availability: you can start as soon as your enquiry is confirmed." },
+        "afternoon": { "status": "good", "text": "Good availability: you can start as soon as your enquiry is confirmed." },
+        "evening": { "status": "good", "text": "Good availability: you can start as soon as your enquiry is confirmed." }
+      }
+    },
+    "group-unlimited": {
+      "name": "Group Unlimited Pass", "price": 1199, "unit": "month",
+      "availability": {
+        "morning": { "status": "good", "text": "Good availability: morning classes have open spots." },
+        "afternoon": { "status": "good", "text": "Good availability: afternoon classes have open spots." },
+        "evening": { "status": "limited", "text": "Limited: evening classes fill up quickly, so book early." }
+      }
+    },
+    "full-membership": {
+      "name": "Full VIP Studio Access Membership", "price": 2800, "unit": "month",
+      "availability": {
+        "morning": { "status": "limited", "text": "Limited: 5 VIP places left for morning trainer sessions." },
+        "afternoon": { "status": "good", "text": "Good availability: VIP places open for afternoon sessions." },
+        "evening": { "status": "waitlist", "text": "Waitlist: evening VIP trainer sessions are currently full." }
+      }
+    }
+  },
+  "programmes": [
+    { "id": "strength", "name": "Private Strength Session", "category": "personal", "level": "All levels", "duration": "60 minutes", "price": 450, "unit": "session", "enquiry": "private-coaching",
+      "description": "A one-on-one strength workout with a certified trainer, built around your goals and any injuries.", "tags": ["strength", "weights", "1-on-1", "trainer"] },
+    { "id": "athletic", "name": "Athletic Performance Session", "category": "personal", "level": "Intermediate", "duration": "75 minutes", "price": 520, "unit": "session", "enquiry": "private-coaching",
+      "description": "Speed, power and conditioning work for runners, surfers and team-sport athletes.", "tags": ["athlete", "speed", "power", "conditioning", "sport"] },
+    { "id": "hiit", "name": "Boutique HIIT", "category": "group", "level": "All levels", "duration": "45 minutes", "price": 120, "unit": "class", "enquiry": "group-classes",
+      "description": "Short, high-intensity intervals in a small group with a coach pushing the pace.", "tags": ["hiit", "cardio", "fat loss", "interval"] },
+    { "id": "pilates", "name": "Reformer Pilates", "category": "group", "level": "Beginner friendly", "duration": "50 minutes", "price": 180, "unit": "class", "enquiry": "group-classes",
+      "description": "Controlled reformer exercises that build core strength, posture and flexibility.", "tags": ["pilates", "core", "posture", "flexibility", "reformer"] },
+    { "id": "yoga", "name": "Power Yoga Flow", "category": "group", "level": "All levels", "duration": "60 minutes", "price": 140, "unit": "class", "enquiry": "group-classes",
+      "description": "A flowing yoga class that links breath and movement to build strength and calm.", "tags": ["yoga", "mobility", "stress", "breath"] },
+    { "id": "nutrition", "name": "Nutrition & Metabolic Consultation", "category": "wellness", "level": "All levels", "duration": "45 minutes", "price": 650, "unit": "consultation", "enquiry": "nutrition-coaching",
+      "description": "A personal eating plan based on your lifestyle, goals and a metabolic assessment.", "tags": ["nutrition", "diet", "meal plan", "weight", "habits"] },
+    { "id": "recovery", "name": "Recovery Suite Session", "category": "recovery", "level": "All levels", "duration": "40 minutes", "price": 350, "unit": "session", "enquiry": "recovery-suite",
+      "description": "Guided stretching, mobility and restorative treatments to help your body recover between workouts.", "tags": ["recovery", "stretching", "massage", "mobility", "rest"] },
+    { "id": "basic", "name": "Basic Pass", "category": "membership", "level": "All levels", "duration": "Monthly access", "price": 599, "unit": "month", "enquiry": "basic-pass",
+      "description": "Access to studio equipment and the general floor space during opening hours.", "tags": ["gym", "membership", "equipment", "access"] },
+    { "id": "group-unlimited", "name": "Group Unlimited Pass", "category": "membership", "level": "All levels", "duration": "Monthly access", "price": 1199, "unit": "month", "enquiry": "group-unlimited",
+      "description": "Unlimited access to our daily group fitness classes, including HIIT, Pilates and Yoga.", "tags": ["membership", "classes", "unlimited", "group"] },
+    { "id": "vip", "name": "Premium VIP Pass", "category": "membership", "level": "All levels", "duration": "Monthly access", "price": 2800, "unit": "month", "enquiry": "full-membership",
+      "description": "Full studio access with dedicated personal trainer sessions and quarterly nutrition reviews.", "tags": ["vip", "membership", "premium", "trainer", "nutrition"] }
+  ]
+}
